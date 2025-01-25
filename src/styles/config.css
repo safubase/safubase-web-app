@@ -1,0 +1,9 @@
+:root {
+  --comp-sidebar-width: 150px;
+  --comp-sidebar-width-open: 230px;
+  --comp-header-height: 60px;
+
+  --border-radius-small: 6px;
+  --border-radius-medium: 9px;
+  --border-radius-large: 12px;
+}

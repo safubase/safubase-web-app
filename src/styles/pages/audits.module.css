@@ -1,0 +1,539 @@
+.sectionaudits {
+  display: flex; justify-content: flex-start; align-items: flex-start;
+}
+
+@media only screen and (max-width: 1150px) {
+  .sectionaudits {
+    display: block;
+  }
+}
+
+.sectionaudits-left {
+  width: 70%;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .sectionaudits-left {
+    width: auto;
+    margin-right: 0;
+  }
+}
+
+.sectionaudits-left-checkboxes {
+  display: flex; justify-content: flex-start; align-items: flex-start; flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.sectionaudits-right {
+  width: 30%;
+}
+
+@media only screen and (max-width: 1150px) {
+  .sectionaudits-right {
+    width: auto;
+    margin-top: 1rem;
+  }
+}
+
+.sectionaudits-right > iframe {
+  width: 100%; height: 460px;
+  border-radius: var(--border-radius-small);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.sectionaudits-right-banner {
+  height: 420px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .sectionaudits-right-banner {
+   display: none;
+  }
+}
+
+.sectionaudits-right-banner > img {
+  height: 100%;
+  display: block;
+}
+
+/* 
+COMPONENT CIRCLE
+*/
+.compcircle {
+  position: relative;
+}
+
+.compcircle-canvas {
+  display: block;
+  position: relative;
+  transform: rotateZ(-90deg);
+}
+
+.compcircle-frame {
+  position: absolute;
+  top: 50%; left: 50%;
+  border-color:  #ebefef;
+  border-style: solid;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.compcircle-frame-shadow {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.compcircle-frame-info {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex; justify-content: center; align-items: center; flex-direction: column;
+  font-size: 17px; font-weight: 500;
+}
+
+/*
+*
+* SCORES CARD COMPONENT
+* component is divided as top and bottom. Bottom div has fixed height in order to align the right progress bars equally with the left circle height. after 950 or other device width, we remove the fixed height
+*
+*/
+.compscores {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-small);
+  margin-bottom: 1rem;
+}
+
+.compscores-top {
+  padding: 1.4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  height: 100px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .compscores-top {
+    padding: 1rem;
+    height: auto;
+    display: block;
+  }
+}
+
+.compscores-top-right {
+  font-size: 19px; font-weight: 500;
+  display: flex; justify-content: flex-start; align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .compscores-top-right {
+    margin-top: 1rem;
+  }
+}
+
+.compscores-top-left-title {
+  font-size: 17px; font-weight: 600;
+  display: flex; justify-content: flex-start; align-items: center;
+}
+
+.compscores-top-left-title > img {
+  width: 20px;
+  margin-left: .8rem;
+  display: block;
+}
+
+.compscores-top-left-address {
+  font-size: 15px; font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  word-break: break-all;
+}
+
+@media only screen and (max-width: 650px) {
+  .compscores-top-left-address {
+    font-size: 14px;
+  }
+}
+
+.compscores-bottom {
+  padding: 1.4rem;
+  height: 360px;
+  display: flex; justify-content: flex-start; align-items: flex-start; 
+}
+
+@media only screen and (max-width: 950px) {
+  .compscores-bottom {
+    display: block;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .compscores-bottom {
+    padding: 1rem;
+  }
+}
+
+.compscores-bottom-left {
+  width: 320px; height: 100%;
+  display: flex; justify-content: space-between; align-items: center; flex-direction: column;
+}
+
+@media only screen and (max-width: 650px) {
+  .compscores-bottom-left {
+    width: auto;
+  }
+}
+
+.compscore-bottom-left-improvebtn {
+  border: 1px solid black;
+  color: black;
+  border-radius: var(--border-radius-small);
+  padding: 1rem;
+  text-align: center;
+  font-size: 16px; font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  display: flex; justify-content: center; align-items: center;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 950px) {
+  .compscore-bottom-left-improvebtn {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .compscore-bottom-left-improvebtn {
+    font-size: 14px;
+  }
+}
+
+.compscore-bottom-left-improvebtn > svg {
+  margin-right: .4rem;
+  width: 20px;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.compscores-bottom-right {
+  margin-left: 2rem;
+  width: 100%; height: 100%;
+  display: flex; justify-content: space-between; align-items: flex-start; flex-direction: column;
+}
+
+@media only screen and (max-width: 950px) {
+  .compscores-bottom-right {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
+
+.compscores-bottom-right-desc {
+  margin-bottom: 1rem;
+}
+
+.compscores-bottom-right-barctr {
+  width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .compscores-bottom-right-barctr {
+    margin-bottom: 1.4rem;
+  }
+}
+
+.compscores-bottom-right-barctr-label {
+  font-size: 17px; font-weight: 400;
+}
+
+@media only screen and (max-width: 650px) {
+  .compscores-bottom-right-barctr-label {
+    font-size: 14px;
+  }
+}
+
+.compscores-bottom-right-barctr-label > span {
+  font-weight: 500;
+}
+
+.compscores-bottom-right-barctr-bar {
+  width: 100%; height: 20px;
+  margin-top: .2rem;
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
+  position: relative;
+  background-color:  #ebefef;
+}
+
+.compscores-bottom-right-barctr-bar-progressfailed {
+  width: 0%; height: 100%;
+  position: absolute;
+  background-color: var(--blue);
+  transition: all 2s ease;
+}
+
+.compscores-bottom-right-barctr-bar-progresspassed {
+  width: 0%; height: 100%;
+  position: absolute;
+  background-color: var(--green);
+  transition: all 2s ease;
+}
+
+.compscores-bottom-right-barctr-bar-progresswarnings {
+  width: 0%; height: 100%;
+  position: absolute;
+  background-color: var(--yellow);
+  transition: all 2s ease;
+}
+
+
+/* COMPONENT SCROLL NUMBER */
+.compscrollnumber {
+  font-weight: 400;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-left: .6rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.compscrollnumber-slot {
+  transition: all 2s ease;
+  position: relative;
+}
+
+/*
+COMPONENT CHECK BOX
+*/
+.compcheckboxes {
+
+}
+
+.compcheckboxes-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 1rem;
+}
+
+.compcheckboxes-row-checkbox {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-small);
+  display: flex; justify-content: flex-start; align-items: flex-start;
+  width: 50%; height: 80px;
+  overflow: hidden;
+}
+
+.compcheckboxes-row-checkbox:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.compcheckboxes-row-checkbox-left  {
+  background-color: var(--red);
+  width: 40%; height: 100%;
+  border-radius: 1px solid rgba(0, 0, 0, 0.25);
+  display: flex; justify-content: center; align-items: center;
+}
+
+.compcheckboxes-row-checkbox-leftsecure  {
+  background-color: var(--green);
+}
+
+.compcheckboxes-row-checkbox-left > svg  {
+  color: white;
+  width: 60%; height: 60%;
+}
+
+.compcheckboxes-row-checkbox-right  {
+  display: flex; justify-content: center; align-items: center;
+  width: 60%; height: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* COMPONENT INFO BOX */
+.compinfoboxes {
+
+}
+
+.compinfoboxes-row {
+  display: flex; justify-content: flex-start; align-items: center;
+}
+
+@media only screen and (max-width: 1250px) {
+  .compinfoboxes-row {
+    flex-wrap: wrap;
+  }
+}
+
+.compinfoboxes-row-box {
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 25%; height: 70px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .compinfoboxes-row-box {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .compinfoboxes-row-box {
+    width: 100%; height: auto;
+    margin-right: 0;
+  }
+}
+
+.compinfoboxes-row-box:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.compinfoboxes-row-box-key {
+  padding: 1rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  display: flex; justify-content: center; align-items: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+.compinfoboxes-row-box-value {
+  display: flex; justify-content: center; align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* COMPONENT INFO BOXES 2 */
+.compinfoboxes2 {
+
+}
+
+.compinfoboxes2-titles {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  background-color: #ebefef;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  border-radius: var(--border-radius-small);
+}
+
+.compinfoboxes2-titles-title {
+  width: 150px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 650px) {
+  .compinfoboxes2-titles-title {
+    width: auto;
+  }
+}
+
+.compinfoboxes2-titles-desc {
+  width: 300px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .compinfoboxes2-titles-desc {
+    width: auto;
+  }
+}
+
+.compinfoboxes2-titles-value {
+  width: 150px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .compinfoboxes2-titles-value {
+
+  }
+}
+
+.compinfoboxes2-box {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: .8rem;
+  border-radius: var(--border-radius-small);
+  background-color: #ebefef;
+  margin-bottom: 1.2rem;
+  height: 70px;
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+
+@media only screen and (max-width: 650px) {
+  .compinfoboxes2-box {
+    margin-bottom: 1rem;
+  }
+}
+
+.compinfoboxes2-boxactive {
+  opacity: 1;
+}
+
+.compinfoboxes2-boxredbg {
+  background-color: rgba(243, 100, 84, 0.18);
+}
+
+.compinfoboxes2-boxgreenbg {
+  background-color: #63a0784b;
+}
+
+.compinfoboxes2-box-title {
+  font-size: 17px; font-weight: 500;
+  width: 150px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .compinfoboxes2-box-title {
+    font-size: 15px;
+    width: auto;
+  }
+}
+
+.compinfoboxes2-box-desc {
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .compinfoboxes2-box-desc {
+    width: auto;
+    font-size: 13px;
+  }
+}
+
+.compinfoboxes2-box-value {
+  font-size: 18px; font-weight: 500;
+  width: 150px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .compinfoboxes2-box-value {
+    font-size: 15px;
+    width: auto;
+  }
+}
+
+.compinfoboxes2-box-value > svg {
+  margin-left: .5rem;
+  cursor: pointer;
+}
+
+
+.anan {
+  display: block;
+  width: 100%;
+  border-radius: var(--border-radius-small);
+}

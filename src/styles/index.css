@@ -1,0 +1,7 @@
+@import './fonts.css';
+@import './colors.css';
+@import './config.css';
+@import './lib.css';
+
+/* WHOLE HTML CONFIG*/
+@import './app.css';

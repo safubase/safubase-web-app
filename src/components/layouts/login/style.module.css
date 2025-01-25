@@ -1,0 +1,7 @@
+.main {
+  padding: 1rem;
+  transition: all .3s ease-out;
+  height: 100vh;
+  background-color: rgb(255, 252, 242);
+}
+

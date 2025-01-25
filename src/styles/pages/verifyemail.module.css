@@ -1,0 +1,66 @@
+.sectionverifyemail {
+  display: flex; justify-content: center; align-items: center;
+  height: 100%;
+}
+
+@keyframes ani-compverifyemail-loadingicon {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* COMPONENT VERIFY EMAIL */
+.compverifyemail {
+
+}
+
+.compverifyemail-top {
+  display: flex; justify-content: center; align-items: center;
+  margin-bottom: 2rem;
+}
+
+.compverifyemail-top-iconctr {
+  width: 86px; height: 86px;
+  font-size: 86px;
+  display: flex; justify-content: center; align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .compverifyemail-top-iconctr {
+    width: 66px; height: 66px;
+    font-size: 66px;
+  }
+}
+
+.compverifyemail-top-loadingicon {
+  animation: ani-compverifyemail-loadingicon 1s linear infinite;
+}
+
+.compverifyemail-top-loadingicon > svg {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.compverifyemail-top-successicon > svg {
+  color: var(--green);
+}
+
+.compverifyemail-top-erricon > svg {
+  color: var(--red);
+}
+
+.compverifyemail-desc {
+  text-align: center;
+  font-size: 26px; font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 650px) {
+  .compverifyemail-desc {
+    font-size: 22px;
+  }
+}
+

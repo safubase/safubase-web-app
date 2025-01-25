@@ -1,0 +1,106 @@
+.modalpresale {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.modalpresale-content {
+    width: 450px; height: 450px;
+    background-color: black;
+    padding: 2rem;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius-small);
+}
+
+@media only screen and (max-width: 750px) {
+    .modalpresale-content {
+        width: 90%; height: 55%;
+        padding: 1rem;
+    }
+}
+
+.modalpresale-content-closebtn {
+    width: 20px;
+    position: absolute;
+    right: 16px; top: 16px;
+    cursor: pointer;
+}
+
+.modalpresale-content-logoctr {
+
+}
+
+.modalpresale-content-logoctr-logo {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+
+.modalpresale-content-title {
+    margin-top: 2rem;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .modalpresale-content-title {
+        font-size: 19px;
+        margin-top: 1.6rem;
+    }
+}
+
+.modalpresale-content-title > span {
+    font-weight: bold;
+    margin-left: 0rem;
+}
+
+.modalpresale-content-desc {
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 750px) {
+    .modalpresale-content-desc {
+        margin-top: .5rem;
+        font-size: 12px;
+    }
+}
+
+.modalpresale-content-btnctr {
+    margin-top: 2rem;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.modalpresale-content-btnctr-btn {
+    display: block;
+    padding: .6rem 4rem;
+    border-radius: var(--border-radius-large);
+    font-size: 22px;
+    cursor: pointer;
+    background-color: rgb(149, 31, 31);
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .modalpresale-content-btnctr {
+        margin-top: 2rem;
+    }
+
+    .modalpresale-content-btnctr-btn {
+        padding: .6rem 4rem;
+        font-size: 16px;
+        border-radius: var(--border-radius-small);
+
+    }
+}
+
