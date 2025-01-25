@@ -324,7 +324,7 @@ export async function blockchain_get_audits(version = 1) {
     throw new Error('Invalid api version specified in signup');
   }
 
-  const url = config.api_url + '/v' + version + '/blockchain/audits';
+  const url = config.api_url + '/v' + version + '/audits';
 
   try {
     const res = await axios_instance.get(url);
