@@ -595,7 +595,7 @@ class Comp_scores extends React.Component {
               detailed examination, <strong>3 important issues</strong> were
               discovered. <strong>Found 1 bug</strong> that is easy to fix. You
               can get information about these issues and get a service offer by
-              contacting Quontral!
+              contacting Safubase!
             </div>
 
             <div className={cn(style['compscores-bottom-right-barctr'])}>
@@ -1238,7 +1238,7 @@ class Audits extends React.Component {
             (this.props.symbol || this.props.token_symbol) +
             ') | Blockchain Security with AI'
           }
-          desc="Contract audit and investment security with artificial intelligence. Quontral is a security company."
+          desc="Contract audit, investment security and algo trading with artificial intelligence. Safubase is a security company."
         />
 
         <Layout_user height="auto">

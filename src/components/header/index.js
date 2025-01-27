@@ -69,7 +69,7 @@ class Header extends React.Component {
           <label className={cn(style['header-nav-label'])}>DEVELOPER</label>
 
           <a
-            href="https://docs.quontral.com/quontral-developer/quick-start"
+            href="https://docs.safubase.com/"
             target="_blank"
             className={cn(style['header-nav-item'])}
           >
@@ -77,7 +77,7 @@ class Header extends React.Component {
           </a>
 
           <a
-            href="https://docs.quontral.com"
+            href="https://docs.safubase.com"
             target="_blank"
             className={cn(style['header-nav-item'])}
           >
@@ -96,7 +96,7 @@ class Header extends React.Component {
               if (window.location.pathname !== '/') {
                 e.preventDefault();
 
-                window.location.replace('https://quontral.com#complastadts');
+                window.location.replace('https://safubase.com#complastadts');
               }
             }}
             href="#complastadts"
@@ -117,7 +117,7 @@ class Header extends React.Component {
                 e.preventDefault();
 
                 window.location.replace(
-                  'https://quontral.com#compwhaletracker'
+                  'https://app.safubase.com#compwhaletracker'
                 );
               }
             }}
@@ -139,7 +139,7 @@ class Header extends React.Component {
                 e.preventDefault();
 
                 window.location.replace(
-                  'https://quontral.com#compupcomingunlocks'
+                  'https://app.safubase.com#compupcomingunlocks'
                 );
               }
             }}
@@ -151,15 +151,15 @@ class Header extends React.Component {
           </a>
 
           <div className={cn(style['header-nav-socials'])}>
-            <a href="https://t.me/quontral" target="_blank">
+            <a href="https://t.me/safubase" target="_blank">
               <Icon_telegram />
             </a>
 
-            <a href="https://instagram.com/quontral" target="_blank">
+            <a href="https://instagram.com/safubase" target="_blank">
               <Icon_instagram />
             </a>
 
-            <a href="https://twitter.com/quontral" target="_blank">
+            <a href="https://twitter.com/safubase" target="_blank">
               <Icon_twitter />
             </a>
           </div>

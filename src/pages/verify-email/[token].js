@@ -66,7 +66,7 @@ class Comp_verify_email extends React.Component {
     });
 
     setTimeout(() => {
-      window.location.replace('https://quontral.com');
+      window.location.replace('https://app.safubase.com');
     }, 1500);
   }
 
@@ -155,8 +155,8 @@ class Verify_email extends React.Component {
     return (
       <>
         <Head
-          title="Quontral.com | Blockchain Security with AI"
-          desc="Contract audit and investment security with artificial intelligence. Quontral is a security company."
+          title="Safubase.com | Blockchain Security & Algo Trading with AI"
+          desc="Contract audit, investment security and algo trading with artificial intelligence. Safubase is a security company."
         />
 
         <Layout_login>

@@ -192,7 +192,7 @@ class Comp_modal_login extends React.Component {
               });
 
               setTimeout(() => {
-                window.location.replace('https://quontral.com');
+                window.location.replace('https://app.safubase.com');
               }, 1500);
             }}
             className={cn(
@@ -283,7 +283,7 @@ class Login extends React.Component {
       context_state.user_role = null;
       context_state.user_img = null;
     } else if (api_res_get_profile.data) {
-      window.location.replace('https://quontral.com');
+      window.location.replace('https://app.safubase.com');
       return;
     }
 
@@ -307,8 +307,8 @@ class Login extends React.Component {
     return (
       <>
         <Head
-          title="Quontral.com | Blockchain Security with AI"
-          desc="Contract audit and investment security with artificial intelligence. Quontral is a security company."
+          title="Safubase.com | Blockchain Security & Algo Trading with AI"
+          desc="Contract audit, investment security and algo trading with artificial intelligence. Safubase is a security company."
         />
 
         <Layout_login>

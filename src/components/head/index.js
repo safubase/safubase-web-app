@@ -26,13 +26,13 @@ class HeadTag extends React.Component {
         <meta property="og:image:height" content="200" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="quontral" />
+        <meta property="og:site_name" content="safubase" />
         <meta property="og:title" content={this.props.title} />
         <meta property="og:description" content={this.props.ogdesc} />
 
-        <meta name="twitter:site" content="@quontral" />
+        <meta name="twitter:site" content="@safubase" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@quontral" />
+        <meta name="twitter:creator" content="@safubase" />
 
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="manifest" href="/manifest.json" />

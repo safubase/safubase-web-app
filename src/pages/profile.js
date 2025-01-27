@@ -44,7 +44,7 @@ class Profile extends React.Component {
   render() {
     return (
       <>
-        <Head title="quontral" desc="quontral" />
+        <Head title="safubase" desc="safubase" />
 
         <UserLayout
           element={

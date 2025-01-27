@@ -723,7 +723,7 @@ class Comp_last_adts extends React.Component {
 
                   <a
                     href={
-                      'https://quontral.com/audits/' +
+                      'https://app.safubase.com/audits/' +
                       curr.address +
                       '?chain_id=' +
                       curr.chain_id
@@ -885,7 +885,7 @@ class Comp_profile_input extends React.Component {
 
         <div className={cn(style['compprofileinput-right'])}>
           <a
-            href="https://cryptoralia.com/quontral"
+            href="https://presale.safubase.com"
             target="_blank"
             className={cn(style['compprofileinput-right-buynow'])}
           >
@@ -893,7 +893,7 @@ class Comp_profile_input extends React.Component {
               <span
                 className={cn(style['compprofileinput-right-buynow-top-token'])}
               >
-                QUONTRAL
+                SAFUBASE
               </span>
 
               <span
@@ -1033,7 +1033,7 @@ class Comp_profile_input_mobile extends React.Component {
     return (
       <div className={cn(style['compprofileinputmobile'])}>
         <a
-          href="https://cryptoralia.com/quontral"
+          href="https://safubase.com"
           target="_blank"
           className={cn(style['compprofileinputmobile-buynow'])}
         >
@@ -1041,7 +1041,7 @@ class Comp_profile_input_mobile extends React.Component {
             <span
               className={cn(style['compprofileinputmobile-buynow-top-token'])}
             >
-              QUONTRAL
+              SAFUBASE
             </span>
 
             <span
@@ -2088,8 +2088,8 @@ class Home extends React.Component {
     return (
       <>
         <Head
-          title="Quontral.com | Blockchain Security with AI"
-          desc="Contract audit and investment security with artificial intelligence. Quontral is a security company."
+          title="Safubase.com | Blockchain Security & Algo Trading with AI"
+          desc="Contract audit, investment security and algo trading with artificial intelligence. Safubase is a security company."
         />
 
         <Layout_user>

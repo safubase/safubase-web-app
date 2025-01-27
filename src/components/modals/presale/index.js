@@ -47,18 +47,18 @@ class Modal_presale extends React.Component {
           </div>
 
           <div className={cn(style['modalpresale-content-title'])}>
-            QUONTRAL <span>PRESALE</span>
+            SAFUBASE <span>PRESALE</span>
           </div>
 
           <div className={cn(style['modalpresale-content-desc'])}>
-            Quontral's official token is on Presale between june 2nd <br /> and
-            5th. Check out and participate in the <br /> presale of the most
-            innovative project of 2023, which has big goals after the presale
+            Safubase's official token is on Presale! <br /> and
+            Check out and participate in the <br /> presale of the most
+            innovative project of 2025, which has big goals after the presale!
           </div>
 
           <div className={cn(style['modalpresale-content-btnctr'])}>
             <a
-              href="https://www.pinksale.finance/launchpad/0x6fC397ddF50A70817b41dF1BAb806C1A68fA7Ae1?chain=BSC"
+              href="https://presale.safubase.com/"
               target="_blank"
               className={cn(style['modalpresale-content-btnctr-btn'])}
             >
