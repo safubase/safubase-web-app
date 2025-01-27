@@ -237,7 +237,7 @@ export async function blockchain_get_whales(version = 1, chain = 'bsc') {
   }
 
   const url =
-    config.api_url + '/v' + version + '/blockchain/whales?chain=' + chain;
+    config.api_url + '/v' + version + '/whales?chain=' + chain;
 
   try {
     const res = await axios_instance.get(url);
@@ -263,7 +263,7 @@ export async function blockchain_get_upcoming_unlocks(version = 1) {
     throw new Error('Invalid api version specified in signup');
   }
 
-  const url = config.api_url + '/v' + version + '/blockchain/upcoming-unlocks';
+  const url = config.api_url + '/v' + version + '/upcoming-unlocks';
 
   try {
     const res = await axios_instance.get(url);

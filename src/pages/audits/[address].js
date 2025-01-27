@@ -1259,7 +1259,7 @@ class Audits extends React.Component {
 
               <img
                 className={cn(style['anan'])}
-                src="https://cdn.discordapp.com/attachments/531837640740175882/1106198956297433178/safubase-ads.png"
+                src="https://i.imgur.com/hqPpUMn.png"
               />
             </div>
           </section>
