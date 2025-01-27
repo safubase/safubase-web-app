@@ -105,7 +105,7 @@ class Sidebar extends React.Component {
                     : null
                 )}
               >
-                PRESALE
+                Presale
               </span>
             </a>
           </div>
