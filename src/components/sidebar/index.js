@@ -89,7 +89,7 @@ class Sidebar extends React.Component {
           <div className={cn(style['sidebarctr-sidebar-top'])}>
             <a
               className={cn(style['sidebarctr-sidebar-top-iconctr'])}
-              href="https://docs.safubase.com"
+              href="https://safubase.gitbook.io/"
               target="_blank"
             >
               <Icon_braces />
@@ -109,12 +109,12 @@ class Sidebar extends React.Component {
           <div className={cn(style['sidebarctr-sidebar-top'])}>
             <a
               className={cn(style['sidebarctr-sidebar-top-iconctr'])}
-              href="https://docs.safubase.com"
+              href="https://safubase.gitbook.io/"
               target="_blank"
             >
               <Icon_doc
                 active={
-                  this.state.pathname === 'docs.safubase.com' ? true : false
+                  this.state.pathname === 'safubase.gitbook.io/' ? true : false
                 }
               />
 

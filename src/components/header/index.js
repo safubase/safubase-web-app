@@ -69,7 +69,7 @@ class Header extends React.Component {
           <label className={cn(style['header-nav-label'])}>DEVELOPER</label>
 
           <a
-            href="https://docs.safubase.com/"
+            href="https://safubase.gitbook.io/"
             target="_blank"
             className={cn(style['header-nav-item'])}
           >
@@ -77,7 +77,7 @@ class Header extends React.Component {
           </a>
 
           <a
-            href="https://docs.safubase.com"
+            href="https://safubase.gitbook.io/"
             target="_blank"
             className={cn(style['header-nav-item'])}
           >
