@@ -1257,10 +1257,10 @@ class Audits extends React.Component {
                 }
               ></iframe>
 
-              <img
+              <a href="https://onelink.to/tpjedj" target="_blank"><img
                 className={cn(style['anan'])}
-                src="https://i.imgur.com/hqPpUMn.png"
-              />
+                src="https://i.imgur.com/zkCVsM7.png"
+              /> </a>
             </div>
           </section>
         </Layout_user>
