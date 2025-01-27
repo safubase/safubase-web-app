@@ -89,6 +89,30 @@ class Sidebar extends React.Component {
           <div className={cn(style['sidebarctr-sidebar-top'])}>
             <a
               className={cn(style['sidebarctr-sidebar-top-iconctr'])}
+              href="https://presale.safubase.com/"
+              target="_blank"
+            >
+              <Icon_chart
+                active={
+                  this.state.pathname === 'presale.safubase.com' ? true : false
+                }
+              />
+
+              <span
+                className={cn(
+                  this.context.state.ui_sidebar_open
+                    ? style['sidebarctr-sidebar-top-iconctr-spanactive']
+                    : null
+                )}
+              >
+                PRESALE
+              </span>
+            </a>
+          </div>
+
+          <div className={cn(style['sidebarctr-sidebar-top'])}>
+            <a
+              className={cn(style['sidebarctr-sidebar-top-iconctr'])}
               href="https://safubase.gitbook.io/"
               target="_blank"
             >
