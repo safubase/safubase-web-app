@@ -66,7 +66,7 @@ class Sidebar extends React.Component {
       >
         <div className={cn(style['sidebarctr-sidebar'])}>
           <div className={cn(style['sidebarctr-sidebar-logo'])}>
-            <a href="https://safubase.com" target="_self">
+            <a href="https://app.safubase.com" target="_self">
               <img src="/images/safubase.jpg" />
             </a>
           </div>

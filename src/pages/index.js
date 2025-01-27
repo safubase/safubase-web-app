@@ -665,16 +665,19 @@ class Comp_last_adts extends React.Component {
                       <img
                         src={
                           (curr.chain_id.toString() === '1'
-                            ? 'https://cdn.discordapp.com/attachments/992423326301565029/1108453541619699833/eth-network.png'
+                            ? 'https://i.imgur.com/2tUGDw7.png'
                             : '') +
                           (curr.chain_id.toString() === '56'
-                            ? 'https://cdn.discordapp.com/attachments/992423326301565029/1108454109939499088/bsc-network.png'
+                            ? 'https://i.imgur.com/S6YMekt.png'
                             : '') +
                           (curr.chain_id.toString() === '137'
-                            ? 'https://cdn.discordapp.com/attachments/992423326301565029/1108455132699570196/polygon-network.png'
+                            ? 'https://i.imgur.com/9VcLURg.png'
                             : '') +
                           (curr.chain_id.toString() === '43114'
-                            ? 'https://cdn.discordapp.com/attachments/992423326301565029/1108455307715280896/avax-network.png'
+                            ? 'https://i.imgur.com/QeF8slo.png'
+                            : '') + 
+                          (curr.chain_id.toString() === '101'
+                            ? 'https://i.imgur.com/LsZWtEA.png'
                             : '')
                         }
                       />
@@ -899,7 +902,7 @@ class Comp_profile_input extends React.Component {
               <span
                 className={cn(style['compprofileinput-right-buynow-top-price'])}
               >
-                ${this.state.price}
+                PRESALE
               </span>
             </div>
 
@@ -1033,7 +1036,7 @@ class Comp_profile_input_mobile extends React.Component {
     return (
       <div className={cn(style['compprofileinputmobile'])}>
         <a
-          href="https://safubase.com"
+          href="https://presale.safubase.com"
           target="_blank"
           className={cn(style['compprofileinputmobile-buynow'])}
         >
