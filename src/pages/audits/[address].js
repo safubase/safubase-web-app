@@ -584,7 +584,7 @@ class Comp_scores extends React.Component {
             <Comp_circle data={this.props.data.score} />
 
             <div className={cn(style['compscore-bottom-left-improvebtn'])}>
-              <Icon_chart /> Improve your security measures
+              <a href="https://onelink.to/tpjedj" target="_blank"><Icon_chart /> Download the App for New Gem Tokens</a>
             </div>
           </div>
 

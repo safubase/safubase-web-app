@@ -477,7 +477,7 @@
 
 .comlastadts-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .complastadts-cats {
@@ -497,7 +497,7 @@
 .complastadts-cats-item {
   color: rgba(0, 0, 0, 0.4);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.1s ease;
   margin-right: 1.6rem;
@@ -921,6 +921,40 @@
   border: 2px solid rgb(202, 202, 202);
   cursor: pointer;
 }
+
+.compprofileinputmobile-downloadapp {
+  margin-left: 1rem;
+  white-space: nowrap;
+  height: 100%;
+  width: 100%;
+  padding: 0 1.4rem;
+  font-size: 15px;
+  font-weight: 800;
+  color: rgb(235, 235, 235);
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  --angle: 0deg; 
+  border: 3px solid transparent; 
+  border-image: linear-gradient(var(--angle), #9440fa, #0b98b1) 1; 
+  animation: rotate 2s linear infinite; 
+  
+  /* Box-shadow ekleniyor */
+  box-shadow: 0 0px 3px #9440fa, 0 0px 3px #9440fa;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg; 
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
 
 
 /*

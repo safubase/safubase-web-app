@@ -306,9 +306,7 @@ class Comp_input extends React.Component {
       <div className={cn(style['compinput'])}>
         <div className={cn(style['compinput-left'])}>
           <div className={cn(style['compinput-left-logo'])}>LIVE</div>
-          You can quickly check the
-          <strong> token smart contract</strong> here. This is a quick Audit
-          option.
+      <strong>Download the Safubase App</strong> for new gem tokens and 80% successful algo trading
         </div>
 
         <div className={cn(style['compinput-right'])}>
@@ -944,6 +942,16 @@ class Comp_profile_input extends React.Component {
           >
             {this.state.address || 'Connect Wallet'}
           </button>
+
+            <button
+    className={cn(style['compprofileinputmobile-downloadapp'])}
+    onClick={() => {
+      window.open('https://onelink.to/tpjedj', '_blank');
+    }}
+  >
+    Download App
+           </button>
+
         </div>
       </div>
     );
@@ -1050,7 +1058,7 @@ class Comp_profile_input_mobile extends React.Component {
             <span
               className={cn(style['compprofileinputmobile-buynow-top-price'])}
             >
-              ${this.state.price}
+              PRESALE
             </span>
           </div>
 
@@ -1061,37 +1069,15 @@ class Comp_profile_input_mobile extends React.Component {
           </div>
         </a>
 
-        <button
-          className={cn(style['compprofileinputmobile-conwallet'])}
-          onClick={async () => {
-            const wallet_accounts = await UTILS.wallet_connect({
-              chain_id: 56,
-            });
+              <button
+        className={cn(style['compprofileinputmobile-downloadapp'])}
+        onClick={() => {
+          window.open('https://onelink.to/tpjedj', '_blank');
+        }}
+      >
+        Download App
+      </button>
 
-            if (wallet_accounts === null) {
-              this.context.set_state({
-                ...this.context.state,
-                ui_toasts: [
-                  ...this.context.state.ui_toasts,
-                  {
-                    type: 'error',
-                    message: 'No web3 wallet detected in the browser',
-                    created_at: new Date(),
-                  },
-                ],
-              });
-
-              return;
-            }
-
-            this.context.set_state({
-              ...this.context.state,
-              wallet_address: wallet_accounts[0],
-            });
-          }}
-        >
-          {this.state.address || 'Connect Wallet'}
-        </button>
       </div>
     );
   }
