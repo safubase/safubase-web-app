@@ -175,9 +175,14 @@ class Comp_input extends React.Component {
           chain_id: 137,
         },
         {
-          img: 'https://cdn.discordapp.com/attachments/992423326301565029/1108455307715280896/avax-network.png',
+          img: '/avalanche.png',
           name: 'Avax',
           chain_id: 43114,
+        },
+        {
+          img: '/solana.png',
+          name: 'Solana',
+          chain_id: 101,
         },
       ],
       loading: false,
@@ -306,7 +311,8 @@ class Comp_input extends React.Component {
       <div className={cn(style['compinput'])}>
         <div className={cn(style['compinput-left'])}>
           <div className={cn(style['compinput-left-logo'])}>LIVE</div>
-      <strong>Download the Safubase App</strong> for new gem tokens and 80% successful algo trading
+          <strong>Download the Safubase App</strong> for new gem tokens and 80%
+          successful algo trading
         </div>
 
         <div className={cn(style['compinput-right'])}>
@@ -621,11 +627,11 @@ class Comp_last_adts extends React.Component {
 
           <div
             onClick={() => {
-              this.setState({ ...this.state, chain_id: '1399811149' });
+              this.setState({ ...this.state, chain_id: '101' });
             }}
             className={cn(
               style['complastadts-cats-item'],
-              this.state.chain_id === '1399811149'
+              this.state.chain_id === '101'
                 ? style['complastadts-cats-itemactive']
                 : null
             )}
@@ -673,7 +679,7 @@ class Comp_last_adts extends React.Component {
                             : '') +
                           (curr.chain_id.toString() === '43114'
                             ? 'https://i.imgur.com/QeF8slo.png'
-                            : '') + 
+                            : '') +
                           (curr.chain_id.toString() === '101'
                             ? 'https://i.imgur.com/LsZWtEA.png'
                             : '')
@@ -914,44 +920,13 @@ class Comp_profile_input extends React.Component {
           </a>
 
           <button
-            className={cn(style['compprofileinput-right-conwallet'])}
-            onClick={async () => {
-              const accounts = await UTILS.wallet_connect({ chain_id: 56 });
-
-              if (accounts === null) {
-                this.context.set_state({
-                  ...this.context.state,
-                  ui_toasts: [
-                    ...this.context.state.ui_toasts,
-                    {
-                      type: 'error',
-                      message: 'No web3 wallet detected in the browser',
-                      created_at: new Date(),
-                    },
-                  ],
-                });
-
-                return;
-              }
-
-              this.context.set_state({
-                ...this.context.state,
-                wallet_address: accounts[0],
-              });
+            className={cn(style['compprofileinputmobile-downloadapp'])}
+            onClick={() => {
+              window.open('https://onelink.to/tpjedj', '_blank');
             }}
           >
-            {this.state.address || 'Connect Wallet'}
+            Download App
           </button>
-
-            <button
-    className={cn(style['compprofileinputmobile-downloadapp'])}
-    onClick={() => {
-      window.open('https://onelink.to/tpjedj', '_blank');
-    }}
-  >
-    Download App
-           </button>
-
         </div>
       </div>
     );
@@ -1069,15 +1044,14 @@ class Comp_profile_input_mobile extends React.Component {
           </div>
         </a>
 
-              <button
-        className={cn(style['compprofileinputmobile-downloadapp'])}
-        onClick={() => {
-          window.open('https://onelink.to/tpjedj', '_blank');
-        }}
-      >
-        Download App
-      </button>
-
+        <button
+          className={cn(style['compprofileinputmobile-downloadapp'])}
+          onClick={() => {
+            window.open('https://onelink.to/tpjedj', '_blank');
+          }}
+        >
+          Download App
+        </button>
       </div>
     );
   }
@@ -2045,12 +2019,16 @@ class Home extends React.Component {
      *
      */
 
-    UTILS.wallet_add_listeners(this.context);
-    const wallet_accounts = await UTILS.wallet_req_accounts();
+    /**
+     * 
+     *     const wallet_accounts = await UTILS.wallet_req_accounts();
 
     if (wallet_accounts !== null && wallet_accounts[0]) {
       context_state.wallet_address = wallet_accounts[0];
     }
+
+     */
+    UTILS.wallet_add_listeners(this.context);
 
     /*
      *
